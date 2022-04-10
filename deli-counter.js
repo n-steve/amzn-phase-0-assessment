@@ -3,8 +3,15 @@
 
 // 2. Example Usage
 
-// const katzDeli = []
-
+const katzDeli = []
+function takeANumber(katzDeli,name){
+    let greeting = "Welcome"
+    for (let i = 0; i<name.length;i++){
+katzDeli = `${greeting},${name[i]}. You are number `
+}
+return katzDeli;
+}
+console.log(takeANumber(katzDeli,"Ada"))
 // takeANumber(katzDeli, "Ada") //=> Welcome, Ada. You are number 1 in line.
 // takeANumber(katzDeli, "Grace") //=> Welcome, Grace. You are number 2 in line.
 // takeANumber(katzDeli, "Kent") //=> Welcome, Kent. You are number 3 in line.
@@ -22,3 +29,5 @@
 // nowServing(katzDeli) //=> "Currently serving Grace."
 
 // line(katzDeli) //=> "The line is currently: 1. Kent 2. Matz"
+
+
